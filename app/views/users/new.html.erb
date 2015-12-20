@@ -9,15 +9,15 @@
 <body>
 	<p>proving that the page exists.....</p>
 	<br/>
-	<form method="post" action="/users" accept-charset="UTF-8">
-		<label for="email">Email</label>
-		<input name="email">
+	<form method="post" action="/users" accept-charset="UTF-8" name="user" id="user">
+		<label for="user[email]">Email</label>
+		<input name="user[email]">
 		<br/>
-		<label for="unsername">Username</label>
-		<input name="username">
+		<label for="user[username]">Username</label>
+		<input name="user[username]">
 		<br/>
-		<label for="password">Password</label>
-		<input name="password">
+		<label for="user[password]">Password</label>
+		<input name="user[password]">
 		<br/>
 		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 		<input type="submit" value="Submit">
