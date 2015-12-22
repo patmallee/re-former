@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Re-former</title>
+</head>
+
+
+<body>
+	<%= form_for @user do |f| %>
+		<%= f.label :email %>
+		<%= f.text_field :email, :value => "example@email.com" %>
+		<%= f.label :username %>
+		<%= f.text_field :username %>
+		<%= f.label :password %>
+		<%= f.text_field :password %>
+		<%= f.submit "Submit" %>
+	<% end %>
+</body>
+
+</html>
