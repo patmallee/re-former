@@ -7,6 +7,14 @@
 
 
 <body>
+
+<div>
+<% @user.errors.each do |attr, msg| %>
+	<%= "#{attr} attribute of the User class threw the following error - #{msg}" %>
+<% end %>
+</div>
+
+
 	<%= form_for @user do |f| %>
 		<%= f.label :email %>
 		<%= f.text_field :email%>
